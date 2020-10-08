@@ -1,0 +1,14 @@
+.container-wrapper{
+	display: grid;
+	grid-template-areas:
+		'business_card header'
+		'business_card article';
+	grid-template-rows: 80px 1fr;
+	grid-template-columns: 30%  1fr;
+	grid-gap: 10px;
+	height: 100vh;
+}
+
+.wrapper-content{
+	grid-area: article;
+}
