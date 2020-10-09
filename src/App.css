@@ -9,6 +9,17 @@
 	height: 100vh;
 }
 
+@media all and (max-width: 575px) {
+  .container-wrapper {
+    grid-template-areas:
+      "business_card"
+      "header"
+      "article";
+    grid-template-rows: 400px 1fr 1fr;
+    grid-template-columns: 375px;
+ }
+}
+
 .wrapper-content{
 	grid-area: article;
 }

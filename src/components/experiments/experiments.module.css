@@ -54,7 +54,16 @@ h4{
 .item_5 img{
   height:170px;
 }
-
+@media all and (max-width: 575px) {
+  .first_row {
+    display: flex;
+    flex-direction:column;
+ }
+ .second_row {
+    display: flex;
+    flex-direction:column;
+ }
+}
 
 
 

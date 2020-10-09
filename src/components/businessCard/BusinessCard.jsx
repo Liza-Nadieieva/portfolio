@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import classes from './businessCard.module.css';
 import myphoto from './myphoto.jpg';
 import '@fortawesome/fontawesome-free/css/all.min.css';

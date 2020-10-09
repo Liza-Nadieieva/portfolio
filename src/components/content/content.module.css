@@ -25,3 +25,8 @@ h4 span{
 	color:blue;
 	font-size: 40px;
 }
+@media all and (max-width: 575px) {
+  .block_about {
+    width:350px;
+ }
+}

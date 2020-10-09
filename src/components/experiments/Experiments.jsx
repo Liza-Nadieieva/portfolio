@@ -1,10 +1,10 @@
 import React from 'react';
 import classes from './experiments.module.css';
-import img1 from './doodle.png';
-import img2 from './demo-store.png';
-import img3 from './social-network.png';
-import img4 from './snow.png';
-import img5 from './clock.png';
+import img1 from './doodle.jpg';
+import img2 from './demo-store.jpg';
+import img3 from './social-network.jpg';
+import img4 from './snow.jpg';
+import img5 from './clock.jpg';
 
 
 
