@@ -43,10 +43,7 @@
   transition: .5s;
 }
 .icon_times:hover{
-  background:linear-gradient(to top, #E93F35,#EC6448);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: initial;
+  color: #E93F35;
   transform: rotate(90deg);
 }
 

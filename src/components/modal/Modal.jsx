@@ -4,7 +4,7 @@ import Portal from '../portal/Portal.jsx';
 import classes from './modal.module.css';
 import Form from '../form/Form.jsx';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faPhone, faEnvelope, faTimes} from '@fortawesome/free-solid-svg-icons';
 
 
 const Modal = ({title, isOpen, onCancel, onSubmit}) => {
@@ -16,7 +16,7 @@ const Modal = ({title, isOpen, onCancel, onSubmit}) => {
 					<div className={classes.modalWindow}>
 						<div className={classes.modalHeader}>
 							<div>Let's talk. Пообщаемся!</div>
-							<i onClick={onCancel} className={"fa fa-times fa-lg " + classes.icon_times} aria-hidden="true"></i>
+							<FontAwesomeIcon onClick={onCancel} icon={faTimes} className={classes.icon_times} size='lg' aria-hidden="true" />
 						</div>
 						<div className={classes.modalBody + ' mt-1 ml-5'}>
 							<span>Job or coffee. Работа или кофеек</span><br/>
