@@ -39,6 +39,7 @@ export default class extends React.Component {
     constructor(props) {
       super(props);
       this.resizeTimeout = false;
+      this.layer = React.createRef();
       this.config = this.props.config;
       this.state = {
         toStyle: {
@@ -77,7 +78,7 @@ export default class extends React.Component {
         <Motion style={this.state.toStyle}>
           {motionStyle => (
             <div
-              ref="layer"
+              ref={this.layer}
               style={{
                 transform: `translate(${motionStyle.x}px, ${motionStyle.y}px)`,
                 ...this.props.layerStyle

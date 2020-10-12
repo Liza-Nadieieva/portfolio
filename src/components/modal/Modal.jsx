@@ -1,9 +1,11 @@
 import React, { Fragment }from 'react';
 import propTypes from 'prop-types';
 import Portal from '../portal/Portal.jsx';
-import '@fortawesome/fontawesome-free/css/all.min.css';
 import classes from './modal.module.css';
 import Form from '../form/Form.jsx';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+
 
 const Modal = ({title, isOpen, onCancel, onSubmit}) => {
 	return(
@@ -18,9 +20,9 @@ const Modal = ({title, isOpen, onCancel, onSubmit}) => {
 						</div>
 						<div className={classes.modalBody + ' mt-1 ml-5'}>
 							<span>Job or coffee. Работа или кофеек</span><br/>
-							<i className="fa fa-phone mt-2" aria-hidden="true"></i>
+							<FontAwesomeIcon icon={faPhone} className="mt-2" aria-hidden="true" />
 							<span className='ml-2'>+380674165386</span> <br/>
-							<i className="fa fa-envelope" aria-hidden="true"></i>
+							<FontAwesomeIcon icon={faEnvelope} aria-hidden="true" />
 							<span className='ml-2'>elizabethnadeevaa@gmail.com</span>
 							<div className='mt-3'>
 								<Form />

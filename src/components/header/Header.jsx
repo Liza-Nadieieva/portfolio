@@ -7,6 +7,8 @@ import classes from './header.module.css';
 import {NavLink} from 'react-router-dom';
 import Button from '../button/Button.jsx';
 import Modal from '../modal/Modal.jsx';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {  faFacebookSquare, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 
 class Header extends Component {
@@ -42,9 +44,9 @@ class Header extends Component {
             </Modal>
           </Nav>
          <Navbar.Text>
-           <a href="https://www.instagram.com/nadeeva_liza" target="_blank" className='ml-3'><i className="fab fa-instagram fa-lg"></i></a>
-           <a href="https://www.facebook.com/liza.nadieieva" target="_blank" className='ml-3'><i className="fab fa-facebook-square fa-lg"></i></a>
-           <a href="https://github.com/Liza-Nadieieva" target="_blank" className='ml-3 mr-2'><i className="fab fa-github fa-lg"></i></a>
+           <a href="https://github.com/Liza-Nadieieva" target="_blank" className='ml-3'><FontAwesomeIcon icon={faGithub} className="fa-lg"/></a>
+           <a href="https://www.facebook.com/liza.nadieieva" target="_blank" className='ml-3'><FontAwesomeIcon icon={faFacebookSquare} className="fa-lg"/></a>
+           <a href="https://www.instagram.com/nadeeva_liza" target="_blank" className='ml-3'><FontAwesomeIcon icon={faInstagram} className="fa-lg"/></a>
           </Navbar.Text>
         </Navbar.Collapse>
       </Navbar>

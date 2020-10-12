@@ -29,4 +29,10 @@ h4 span{
   .block_about {
     width:350px;
  }
+ .block_education{
+ 	margin-left:20px;
+ }
+ .block_language{
+ 	margin-left:20px;
+ }
 }

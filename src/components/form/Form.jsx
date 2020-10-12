@@ -87,7 +87,7 @@ class Form extends Component {
             value={this.state.message}
             onChange={this.handleUserInput}></textarea>
         </div>
-        <Button cssClasses='button_card btn' disabled={!this.state.formValid}>Send Message</Button>
+        <Button cssClasses='button_card btn btn_modal' disabled={!this.state.formValid}>Send Message</Button>
       </form>
     )
   }

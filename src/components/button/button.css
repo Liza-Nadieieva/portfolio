@@ -83,7 +83,10 @@
     width:30px;
     height:30px;
     margin-top:10px;
- }
+  }
+  .btn{
+    width:180px !important;
+  }
 }
 button:active, button:focus {
   outline: none !important;
