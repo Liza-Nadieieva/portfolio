@@ -12,6 +12,7 @@ import {  faFacebookSquare, faGithub, faInstagram } from '@fortawesome/free-bran
 
 
 class Header extends Component {
+
   state = {
     isOpen: false,
   }

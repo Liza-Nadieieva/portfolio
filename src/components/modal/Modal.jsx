@@ -5,6 +5,7 @@ import classes from './modal.module.css';
 import Form from '../form/Form.jsx';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope, faTimes} from '@fortawesome/free-solid-svg-icons';
+import ModalContainer from './ModalContainer.jsx';
 
 
 const Modal = ({title, isOpen, onCancel, onSubmit}) => {
@@ -13,22 +14,24 @@ const Modal = ({title, isOpen, onCancel, onSubmit}) => {
 		{ isOpen &&
 			<Portal>
 				<div className={classes.modalOverlay}>
-					<div className={classes.modalWindow}>
-						<div className={classes.modalHeader}>
-							<div>Let's talk. Пообщаемся!</div>
-							<FontAwesomeIcon onClick={onCancel} icon={faTimes} className={classes.icon_times} size='lg' aria-hidden="true" />
-						</div>
-						<div className={classes.modalBody + ' mt-1 ml-5'}>
-							<span>Job or coffee. Работа или кофеек</span><br/>
-							<FontAwesomeIcon icon={faPhone} className="mt-2" aria-hidden="true" />
-							<span className='ml-2'>+380674165386</span> <br/>
-							<FontAwesomeIcon icon={faEnvelope} aria-hidden="true" />
-							<span className='ml-2'>elizabethnadeevaa@gmail.com</span>
-							<div className='mt-3'>
-								<Form />
+					<ModalContainer onCancel={onCancel}>
+						<div className={classes.modalWindow}>
+							<div className={classes.modalHeader}>
+								<div>Let's talk. Пообщаемся!</div>
+								<FontAwesomeIcon onClick={onCancel} icon={faTimes} className={classes.icon_times} size='lg' aria-hidden="true" />
+							</div>
+							<div className={classes.modalBody + ' mt-1 ml-5'}>
+								<span>Job or coffee. Работа или кофеек</span><br/>
+								<FontAwesomeIcon icon={faPhone} className="mt-2" aria-hidden="true" />
+								<span className='ml-2'>+380674165386</span> <br/>
+								<FontAwesomeIcon icon={faEnvelope} aria-hidden="true" />
+								<span className='ml-2'>elizabethnadeevaa@gmail.com</span>
+								<div className='mt-3'>
+									<Form />
+								</div>
 							</div>
 						</div>
-					</div>
+					</ModalContainer>
 				</div>
 			</Portal>
 		}
