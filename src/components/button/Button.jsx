@@ -3,9 +3,8 @@ import * as classNames from 'classnames';
 import PropTypes from 'prop-types';
 import './button.css';
 
-
 const Button = ({children, cssClasses, onClick, disabled, className}) => {
-	const onClickAction = e => {
+  const onClickAction = e => {
     if (disabled) {
       e.preventDefault();
     } else {
@@ -18,26 +17,23 @@ const Button = ({children, cssClasses, onClick, disabled, className}) => {
    className,
   );
 
-	return(
-		<button className={classes} className={cssClasses} disabled={disabled} onClick={onClickAction}>{children}</button>
-	);
+  return(
+    <button className={classes} className={cssClasses} disabled={disabled} onClick={onClickAction}>{children}</button>
+  );
 };
 
 Button.propTypes = {
-	children: PropTypes.node,
-	onClick: PropTypes.func,
-	disabled: PropTypes.bool,
-	className: PropTypes.string,
-
+  children: PropTypes.node,
+  onClick: PropTypes.func,
+  disabled: PropTypes.bool,
+  className: PropTypes.string,
 };
 
 Button.defaultProps = {
-	children: 'default button',
-	disabled: false,
-	onClick: () => {},
-	className: '',
-
+  children: 'default button',
+  disabled: false,
+  className: '',
+  onClick: () => {},
 };
-
 
 export default Button;

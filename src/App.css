@@ -1,12 +1,12 @@
 .container-wrapper{
-	display: grid;
-	grid-template-areas:
-		'business_card header'
-		'business_card article';
-	grid-template-rows: 80px 1fr;
-	grid-template-columns: 30%  1fr;
-	grid-gap: 10px;
-	height: 100vh;
+  display: grid;
+  grid-template-areas:
+    'business_card header'
+    'business_card article';
+  grid-template-rows: 80px 1fr;
+  grid-template-columns: 30%  1fr;
+  grid-gap: 10px;
+  height: 100vh;
 }
 
 @media all and (max-width: 575px) {
@@ -17,9 +17,9 @@
       "article";
     grid-template-rows: 400px 1fr 1fr;
     grid-template-columns: 390px;
- }
+  }
 }
 
 .wrapper-content{
-	grid-area: article;
+  grid-area: article;
 }

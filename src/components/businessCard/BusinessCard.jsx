@@ -26,25 +26,23 @@ class BusinessCard extends Component {
   }
   render() {
   return(
-  	<div className={classes.card}>
-		  <Parallax />
-  		<div className={classes.title}>
-   			<h2>Elizabeth Nadieieva</h2>
-   			<img alt='#' src={myphoto} className={classes.img}/> <br />
+    <div className={classes.card}>
+      <Parallax />
+      <div className={classes.title}>
+        <h2>Elizabeth Nadieieva</h2>
+        <img alt='#' src={myphoto} className={classes.img}/> <br />
         <span>Junior FrontEnd Developer</span> <br />
-     		<Button cssClasses='button_card' onClick={this.openModal}>Contact me</Button>
-   			<Modal
-  		          isOpen={this.state.isOpen}
-  		          onCancel={this.handleCancel}
-  		          onSubmit={this.handleSubmit}
-                title={`Let's talk 2`}
-          	>
-
+        <Button cssClasses='button_card' onClick={this.openModal}>Contact me</Button>
+        <Modal
+                isOpen={this.state.isOpen}
+                onCancel={this.handleCancel}
+                onSubmit={this.handleSubmit}
+                title={`Let's talk 2`}>
         </Modal>
-  		</div>
- 	  </div>
-  	);
-	}
+      </div>
+    </div>
+  );
+  }
 }
 
 export default BusinessCard;

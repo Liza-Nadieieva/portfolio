@@ -1,38 +1,38 @@
 .block_about{
-	width:700px;
-	margin-left:40px;
+  width:700px;
+  margin-left:40px;
 }
 .text_orange{
-	color:#EA4C3C;
+  color:#EA4C3C;
 }
 .block_skills{
-	margin-left:20px;
-	width:350px;
-	float: left;
-	margin-top:20px;
+  margin-left:20px;
+  width:350px;
+  float: left;
+  margin-top:20px;
 }
 .block_education{
-	float: left;
-	width:350px;
-	margin-top: 20px;
+  float: left;
+  width:350px;
+  margin-top: 20px;
 }
 .block_language{
-	width:350px;
-	margin-left:30px;
+  width:350px;
+  margin-left:30px;
 }
 
 h4 span{
-	color:blue;
-	font-size: 40px;
+  color:blue;
+  font-size: 40px;
 }
 @media all and (max-width: 575px) {
   .block_about {
     width:350px;
- }
+  }
  .block_education{
- 	margin-left:20px;
- }
+   margin-left:20px;
+  }
  .block_language{
- 	margin-left:20px;
- }
+   margin-left:20px;
+  }
 }

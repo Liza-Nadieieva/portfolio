@@ -8,7 +8,7 @@ class Form extends Component {
   constructor (props) {
     super(props);
     this.state = {
-    	name: '',
+      name: '',
       email: '',
       message: '',
       formErrors: {email: '', name: '', message: ''},
@@ -23,7 +23,7 @@ class Form extends Component {
     const name = e.target.name;
     const value = e.target.value;
     this.setState({[name]: value},
-      () => { this.validateField(name, value) });
+    () => { this.validateField(name, value) });
   }
 
   validateField(fieldName, value) {
@@ -33,18 +33,18 @@ class Form extends Component {
     let messageValid = this.state.messageValid;
 
     switch(fieldName) {
-    	case 'name':
-    		nameValid = value.length >= 3;
-    		fieldValidationErrors.name = nameValid ? '': ' is too short';
-    		break;
+      case 'name':
+        nameValid = value.length >= 3;
+        fieldValidationErrors.name = nameValid ? '': ' is too short';
+        break;
       case 'email':
         emailValid = value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i);
         fieldValidationErrors.email = emailValid ? '' : ' is invalid';
         break;
       case 'message':
-    		messageValid = value.length >= 3;
-    		fieldValidationErrors.message = messageValid ? '': ' is too short';
-    		break;
+        messageValid = value.length >= 3;
+        fieldValidationErrors.message = messageValid ? '': ' is too short';
+        break;
       default:
         break;
     }

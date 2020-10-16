@@ -9,13 +9,13 @@ import Experiments from './components/experiments/Experiments.jsx';
 function App(props) {
   return (
     <div className="container-wrapper">
-    	<BusinessCard />
-    	<Header /> 
-    	<div className='wrapper-content'>
-    		  <Route path='/about' component={Content} />
-      		<Route path='/experiments' component={Experiments} />
-       		<Redirect from='/' to='/about'/>
-    	</div>
+      <BusinessCard />
+      <Header />
+      <div className='wrapper-content'>
+        <Route path='/about' component={Content} />
+        <Route path='/experiments' component={Experiments} />
+        <Redirect from='/' to='/about'/>
+      </div>
     </div>
   )
 }
